@@ -1,0 +1,105 @@
+/* ================== fonts ================== */
+/* 
+@font-face {
+    font-family: 'Roboto';
+    font-style: bold;
+    src: url(../fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: regular;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: thin;
+    src: url(../fonts/Roboto-Thin.ttf);
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color:darkkhaki;
+    position: sticky;
+    top: 0px;
+    box-shadow: 0 3px 20px #000;
+}
+
+/* h1 {
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+} */
+
+nav {
+    min-height: 10vh;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul,
+nav h1 {
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    flex: 1;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul a {
+    color: black;
+}
+
+main section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main section h2 {
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+main section.home {
+    background: linear-gradient(to right top, #F1F2B5,#135058);
+}
+
+main section.about {
+    background: linear-gradient(to right top, #D1913C,#FFD194);
+}
+
+main section.work {
+    background: linear-gradient(to right top, #7b4397,#dc2430);
+}
+
+main section.contact {
+    background: linear-gradient(to right top, #136a8a,#267871);
+}
+
+
+nav .bubble {
+    position: absolute;
+    z-index: -2;
+    background: linear-gradient(to right top, #F1F2B5,#135058);
+    transform: scale(2);
+    transition: all 0.5s ease;
+}
